@@ -388,7 +388,7 @@ button:focus {
   background: #373737;
 }
 
-.header .menu {
+.header .menu-link {
   display: none;
   z-index: 9;
   width: 50px;
@@ -397,10 +397,12 @@ button:focus {
   border-radius: 50%;
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
-  position: relative;
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 
-.header .menu span, .header .menu span:before, .header .menu span:after {
+.header .menu-link span, .header .menu-link span:before, .header .menu-link span:after {
   display: block;
   width: 18px;
   height: 2px;
@@ -412,31 +414,31 @@ button:focus {
   margin-left: -9px;
 }
 
-.header .menu span:before {
+.header .menu-link span:before {
   content: '';
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin-top: -6px;
 }
 
-.header .menu span:after {
+.header .menu-link span:after {
   content: '';
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin-top: 4px;
 }
 
-.header .menu_active span {
+.header .menu-link_active span {
   background: transparent;
 }
 
-.header .menu_active span:before {
+.header .menu-link_active span:before {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   margin-top: 0;
 }
 
-.header .menu_active span:after {
+.header .menu-link_active span:after {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   margin-top: 0;
@@ -481,9 +483,15 @@ button:focus {
   .container {
     width: 922px;
   }
+}
+
+@media (max-width: 922px) {
+  .container {
+    width: 768px;
+  }
   .header {
-    display: none;
-    height: 400px;
+    padding: 40px;
+    height: 370px;
   }
   .header-menu ul {
     -webkit-box-orient: vertical;
@@ -513,12 +521,6 @@ button:focus {
   }
   .header .menu-link {
     display: block;
-  }
-}
-
-@media (max-width: 922px) {
-  .container {
-    width: 768px;
   }
 }
 
