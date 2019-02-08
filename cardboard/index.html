@@ -6,27 +6,34 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <!-- <link rel="stylesheet" href="css/slick.css"> -->
  <!-- <link rel="stylesheet" href="css/animation.css"> -->
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Добрый Картон</title>
 </head>
 <body>
  <div class="header">
   <div class="container">
-   <div class="header-menu">
-    <a href="#">о компании</a>
-    <a href="#">преимущества</a>
-    <a href="#">производство</a>
-    <a href="#">склад</a>
-    <a href="#">продукция</a>
-    <a href="#">наши клиенты</a>
-    <a href="#">сертификаты</a>
-    <a href="#">отзывы</a>
-    <a href="#">контакты</a>
-   </div>
+    <a class="menu-link" href="#menu">
+      <span></span>
+    </a>
+    <div class="header-menu">
+        <ul>
+          <li><a href="#">о компании</a></li>
+          <li><a href="#">контакты</a></li>
+          <li><a href="#">преимущества</a></li>
+          <li><a href="#">производство</a></li>
+          <li><a href="#">производство</a></li>
+          <li><a href="#">склад</a></li>
+          <li><a href="#">продукция</a></li>
+          <li><a href="#">наши клиенты</a></li>
+          <li><a href="#">сертификаты</a></li>
+          <li><a href="#">отзывы</a></li>
+        </ul>
+    </div>
+ 
   </div>
  </div>
    
-   <div class="header-logo">
+    <div class="header-logo">
      <div class="container">
        <div class="logo-common">
           <div class="logo">
@@ -42,6 +49,7 @@
         </div>
       </div>
     </div>
+
     <div class="main">
       <div class="container">
         <div class="main-common">
@@ -62,7 +70,26 @@
         </div>
        
       </div>
-    </div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      var link = $('.menu-link');
+      var link_active = $('.menu-link_active');
+      var menu = $('.menu');
+
+      link.click(function(){
+          link.toggleClass('menu-link_active');
+          menu.toggleClass('menu_active');
+      });
+      link_active.click(function(){
+        link.removeClass('menu-link_active');
+      });
+    });
+  </script>
  
 </body>
 </html>
