@@ -3,12 +3,38 @@
   top: 0
   left: 0
   z-index: 1
-  width: 100%
+  width: 100vw
   background: #373737
-   // top: -100vw
-    // transition: all 0.4s
-    // &-active 
-    //   left: 0
+  // top: -100vw
+  // transition: all 0.5s
+  // &_active 
+  //   left: 0
+  .menu 
+    ul
+      z-index: 1
+      height: 44px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      left: -100vw
+      transition: all 0.5s
+      &_active 
+        left: 0
+      a
+        text-transform: uppercase 
+        text-decoration: none 
+        color: white
+        font-size: 12px
+        &:hover
+          color: #ff9d00
+      li:after
+          content: ''
+          border-left: 1px dotted #5f5f5f
+          margin-left: 9px
+      li:last-child:after
+        border-left: none
+        margin-left: 0
+
   .menu
     &-link
       display: none
@@ -48,60 +74,42 @@
           transform: rotate(-135deg)
           margin-top: 0  
     
-  &-menu ul
-    height: 44px
-    display: flex
-    justify-content: space-between
-    align-items: center
-    left: -100vw
-    transition: all 0.5s
-    &-active 
-      left: 0
-  &-menu a
-    text-transform: uppercase 
-    text-decoration: none 
-    color: white
-    font-size: 12px
-    &:hover
-      color: #ff9d00
-  li:after
-      content: ''
-      border-left: 1px dotted #5f5f5f
-      margin-left: 9px
-  li:last-child:after
-    border-left: none
-    margin-left: 0
+  
 @media (max-width: 1199px)
   .container
     width: 922px
  
        
-    
-   
 @media (max-width: 922px) 
     .container
       width: 768px
     .header
-      padding: 40px
+      width: 100%
+      padding: 40px 0 40px
       // display: block
       height: 370px
-      &-menu ul
-        flex-direction: column  
+      .menu ul
+        flex-direction: column
+        // left: -100%
+        // transition: all 0.5s
+        // &_active 
+        //   left: 0  
         li:after
           border-left: none
         li 
           line-height: 15px
-          width: 100vw     
-      &-menu a
-        font-size: 20px 
-        display: block
-        width: 100%
-        text-align: center
-        transition: all 0.2s
-        &:hover
+          width: 100vw
+               
+      .menu ul a
+          font-size: 20px 
           display: block
-          font-size: 21px
-          background: rgba(255,255,255,0.1)
+          width: 100%
+          text-align: center
+          transition: all 0.2s
+          &:hover
+            display: block
+            font-size: 21px
+            background: rgba(255,255,255,0.1)
     .header      
       .menu
         &-link
