@@ -12,9 +12,6 @@
 <body>
  <div class="header">
   <div class="container">
-    <a class="menu-link" href="#menu">
-      <span></span>
-    </a>
     <div class="menu">
         <ul>
           <li><a href="#">о компании</a></li>
@@ -29,13 +26,15 @@
           <li><a href="#">отзывы</a></li>
         </ul>
     </div>
- 
   </div>
  </div>
-   
+    
      <div class="header-logo">
      <div class="container">
        <div class="logo-common">
+        <a class="menu-link" href="#menu">
+          <span></span>
+        </a>
           <div class="logo">
             <img src="img/header/logo.png" alt="">
           </div>
@@ -68,28 +67,11 @@
             <button type="submit" class="button form__button">Оставить заявку</button>
           </div>
         </div>
-       
-      </div>
-    </div> -->
+       </div>
+    </div> 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/slick.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      var link = $('.menu-link');
-      var link_active = $('.menu-link_active');
-      var menu = $('.menu');
-
-      link.click(function(){
-        link.toggleClass('menu-link_active');
-        menu.toggleClass('menu_active');
-      });
-      link_active.click(function(){
-        link.removeClass('menu-link_active');
-      });
-    });
-  </script>
- 
+  <script src="js/script.js"></script>
 </body>
 </html>

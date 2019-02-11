@@ -38,4 +38,59 @@
       position: absolute
       top: 12px
       left: 10px
-
+  .menu
+    &-link 
+      display: none
+      z-index: 9
+      width: 50px 
+      height: 50px
+      background: #ff9d00
+      border-radius: 50%
+      box-shadow: 1px 1px 10px rgba(0,0,0,.4)
+      position: fixed
+      top: 64px
+      left: 20px
+      span, span:before, span:after
+        display: block
+        width: 18px
+        height: 2px
+        background: white
+        position: absolute
+        left: 50%
+        top: 50%
+        margin-top: -1px
+        margin-left: -9px
+      span:before
+        content: ''
+        transition: all 0.2s 
+        margin-top: -6px 
+      span:after
+        content: ''
+        transition: all 0.2s 
+        margin-top: 4px
+      &_active span
+        background: transparent
+        &:before 
+          transform: rotate(135deg)
+          margin-top: 0
+        &:after 
+          transform: rotate(-135deg)
+          margin-top: 0
+  .menu_active
+      display: none 
+@media (max-width: 1199px)
+  .container
+    width: 992px
+@media (max-width: 992px) 
+  .container
+    width: 768px
+    .menu
+      &-link
+        display: block
+        z-index: 99  
+@media (max-width: 768px)
+  .container
+    width: 574px
+@media(max-width: 688px)
+  .container
+    width: 575px        
