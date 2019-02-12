@@ -1,5 +1,5 @@
 .main
-  padding: 47px
+  padding: 40px 0 40px
   background: url('../img/main/background.png')no-repeat center 
   position: relative
   &:before
@@ -85,3 +85,100 @@
   .small-text 
     font-size: 14px    
     margin-left: 44px
+
+
+@media (max-width: 1199px)
+  .container
+    width: 941px 
+    .box 
+      img 
+        max-width: 45% 
+        left: -36px 
+        top: 57px 
+    .main-right h1 
+      font-size: 35px
+      width: 400px
+      margin-left: 10px 
+    .main-form
+      display: flex
+      flex-direction: column
+      height: 275px
+      &:before 
+        width: 86% 
+        top: 5px 
+      &__text 
+        margin: 10px 
+        line-height: 25px
+      p 
+        margin: 0px 0 20px 63px 
+    .input 
+      margin: -10px 10px 0px 70px 
+      text-align: center
+    .main-button 
+      margin: 15px 0px 10px 70px 
+      width: 311px 
+    .small-text 
+      margin-left: 130px             
+@media (max-width: 992px) 
+  .container
+    width: 767px 
+    .box  
+      display: none 
+    .main-right 
+      display: block 
+      margin: 0 auto  
+      text-align: center 
+    h1.title 
+      margin: 0 auto    
+    .main 
+      &-form 
+        width: 500px
+        height: auto
+        &:before 
+          left: 35px 
+    .main-form__text
+      width: 300px 
+      margin: 20px auto
+    .main-form p 
+      margin: 0px 0 20px  
+    .input
+      width: 300px 
+      margin: 5px auto 
+    .main-button 
+      width: 300px 
+      margin: 5px auto  
+    .small-text 
+      margin: auto     
+@media (max-width: 768px)
+  .container
+    width: 576px
+    .main-common 
+      // max-width: 520px 
+    .main-form 
+      max-width: 425px
+    .main-form
+      &:before 
+        width: 100%
+        left: 0 
+
+    h1.title 
+      font-size: 30px
+
+@media(max-width: 577px)
+  .container
+    width: 95% 
+    .main
+      margin: auto  
+      &-common 
+        // max-width: none 
+      &-form 
+        max-width: 300px
+      &__text
+        max-width: 300px 
+    h1.title 
+      font-size: 25px
+      max-width: 280px 
+    .input 
+      max-width: 280px 
+    .main-button 
+      max-width: 280px     
