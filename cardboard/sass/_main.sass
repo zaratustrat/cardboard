@@ -1,4 +1,5 @@
 .main
+  padding: 47px
   background: url('../img/main/background.png')no-repeat center 
   position: relative
   &:before
@@ -12,37 +13,75 @@
     z-index: 2
   &-common 
     display: flex
+    justify-content: space-between
+    position: relative 
+    .box img 
+      max-width: none 
+      position: absolute 
+      left: -102px 
+      top: 12px
     .box 
-      z-index: 4  
+      z-index: 4
+      &:before 
+        content: '' 
+        width: 390px 
+        height: 390px
+        border: 1px solid white 
+        border-radius: 50% 
+        z-index: -1 
+        position: absolute 
+        margin-top: 30px 
+      &:after 
+        content: ''
+        width: 60px 
+        height: 50px 
+        background: url('../img/main/main-icon.png')no-repeat center 
+        position: absolute  
+        top: 350px 
   &-right 
     z-index: 4
     color: white
     h1 
       width: 524px
       font-size: 41px
+      margin: 5px 0 5px
     span 
-      font-size: 25px 
+      font-size: 25px
+      display: block 
+      margin: 5px 0 5px 
+      font-weight: 100
   &-form 
-    max-width: 535px 
+    width: 535px 
     height: 240px
-    border: 1px solid red
-    border-radius: 5px
+    border-radius: 5px 
+    position: relative
+    &:before
+      content: ''
+      background: white 
+      opacity: 0.2 
+      width: 100%
+      height: 100%
+      position: absolute 
+      border-radius: 5px
+      top: -25px
+      left: 0 
+      z-index: 4
     &__text 
       font-size: 20px
       line-height: 33px
-      margin: 30px 0 0 27px
+      margin: 52px 0 0 25px
   p 
     font-weight: 600
     font-size: 20px
     text-transform: uppercase
-    margin: 10px 0 20px 27px 
+    margin: 10px 0 20px 25px 
   .input  
     width: 311px 
     height: 56px 
-    margin: 0px 10px 10px 27px
+    margin: 0px 10px 10px 25px
   .main-button 
     width: 161px 
     height: 56px 
   .small-text 
     font-size: 14px    
-    margin-left: 46px
+    margin-left: 44px
