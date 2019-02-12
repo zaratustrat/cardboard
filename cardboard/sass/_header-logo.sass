@@ -76,21 +76,47 @@
         &:after 
           transform: rotate(-135deg)
           margin-top: 0
-  .menu_active
-      display: none 
-@media (max-width: 1199px)
-  .container
-    width: 992px
+
+
 @media (max-width: 992px) 
   .container
-    width: 768px
+    width: 767px
+    .logo-common
+      flex-direction: column
+    .logo 
+      margin-bottom: 30px  
     .menu
       &-link
         display: block
-        z-index: 99  
-@media (max-width: 768px)
+        z-index: 99
+@media (max-width: 767px)
   .container
     width: 574px
-@media(max-width: 688px)
+    .header-phone__button
+      flex-direction: column
+    .header-callback
+      width: 450px  
+    .header-phone 
+        margin-bottom: 30px
+        &:before
+          margin-right: 33px
+@media(max-width: 576px)
   .container
-    width: 575px        
+    width: 320px
+    .header-phone__button
+      flex-direction: column
+      
+    .header-callback
+      flex-direction: column
+      align-items: center 
+    .header-phone 
+      &:before 
+        display: none
+    button 
+      margin-left: 0    
+    .menu 
+      &-link 
+        left: 5px
+
+.menu_active
+      display: block                
