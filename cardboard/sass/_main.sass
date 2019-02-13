@@ -1,6 +1,7 @@
 .main
   padding: 40px 0 40px
-  background: url('../img/main/background.png')no-repeat center 
+  background: url('../img/main/background.png')no-repeat center
+  background-size: cover
   position: relative
   &:before
     content: ''
@@ -46,6 +47,7 @@
       font-size: 41px
       margin: 5px 0 5px
     span 
+      display: block
       font-size: 25px
       display: block 
       margin: 5px 0 5px 
@@ -63,9 +65,9 @@
       height: 100%
       position: absolute 
       border-radius: 5px
-      top: -25px
+      top: 0
       left: 0 
-      z-index: 4
+      z-index: -1
     &__text 
       font-size: 20px
       line-height: 33px
@@ -90,35 +92,15 @@
 @media (max-width: 1199px)
   .container
     width: 941px 
+    .main 
+      &-common
+        justify-content: center 
     .box 
-      img 
-        max-width: 45% 
-        left: -36px 
-        top: 57px 
-    .main-right h1 
-      font-size: 35px
-      width: 400px
-      margin-left: 10px 
-    .main-form
-      display: flex
-      flex-direction: column
-      height: 275px
-      &:before 
-        width: 86% 
-        top: 5px 
-      &__text 
-        margin: 10px 
-        line-height: 25px
-      p 
-        margin: 0px 0 20px 63px 
-    .input 
-      margin: -10px 10px 0px 70px 
+        display: none
+    .main-right 
       text-align: center
-    .main-button 
-      margin: 15px 0px 10px 70px 
-      width: 311px 
-    .small-text 
-      margin-left: 130px             
+      flex-direction: column
+      align-items: center             
 @media (max-width: 992px) 
   .container
     width: 767px 
@@ -132,12 +114,13 @@
       margin: 0 auto    
     .main 
       &-form 
-        width: 500px
-        height: auto
-        &:before 
-          left: 35px 
-    .main-form__text
-      width: 300px 
+        max-width: 524px
+        height: auto 
+    .main-form__text 
+      font-size: 16px
+      line-height: 25px
+      max-width: 424px
+      width: 100% 
       margin: 20px auto
     .main-form p 
       margin: 0px 0 20px  
@@ -152,9 +135,8 @@
 @media (max-width: 768px)
   .container
     width: 576px
-    .main-common 
-      // max-width: 520px 
     .main-form 
+      margin: auto
       max-width: 425px
     .main-form
       &:before 
@@ -172,13 +154,20 @@
       &-common 
         // max-width: none 
       &-form 
-        max-width: 300px
-      &__text
-        max-width: 300px 
+        max-width: 220px
+        margin: auto
+      &-form p 
+        font-size: 16px
+        max-width: 230px
+        margin: auto  
+      &-form__text
+        max-width: 230px 
     h1.title 
-      font-size: 25px
-      max-width: 280px 
+      font-size: 20px
+      max-width: 230px
+    .main-right span 
+        font-size: 20px 
     .input 
-      max-width: 280px 
+      max-width: 200px 
     .main-button 
-      max-width: 280px     
+      max-width: 200px     

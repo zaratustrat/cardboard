@@ -548,6 +548,7 @@ button:focus {
   height: 45px;
   font-size: 14px;
   position: relative;
+  padding-left: 45px;
 }
 
 .header-logo button:before {
@@ -557,7 +558,7 @@ button:focus {
   height: 20px;
   position: absolute;
   top: 12px;
-  left: 10px;
+  left: 20px;
 }
 
 .header-logo .menu-link {
@@ -617,6 +618,9 @@ button:focus {
 }
 
 @media (max-width: 992px) {
+  .header-logo {
+    margin-top: 20px;
+  }
   .container {
     width: 767px;
   }
@@ -660,6 +664,9 @@ button:focus {
   .container {
     width: 320px;
   }
+  .container .logo {
+    margin-bottom: 15px;
+  }
   .container .header-phone__button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -667,6 +674,7 @@ button:focus {
             flex-direction: column;
   }
   .container .header-callback {
+    max-width: 300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -674,6 +682,10 @@ button:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .container .header-phone {
+    margin-bottom: 15px;
+    font-size: 15px;
   }
   .container .header-phone:before {
     display: none;
@@ -693,6 +705,7 @@ button:focus {
 .main {
   padding: 40px 0 40px;
   background: url("../img/main/background.png") no-repeat center;
+  background-size: cover;
   position: relative;
 }
 
@@ -760,6 +773,7 @@ button:focus {
 }
 
 .main-right span {
+  display: block;
   font-size: 25px;
   display: block;
   margin: 5px 0 5px;
@@ -781,9 +795,9 @@ button:focus {
   height: 100%;
   position: absolute;
   border-radius: 5px;
-  top: -25px;
+  top: 0;
   left: 0;
-  z-index: 4;
+  z-index: -1;
 }
 
 .main-form__text {
@@ -819,47 +833,23 @@ button:focus {
   .container {
     width: 941px;
   }
-  .container .box img {
-    max-width: 45%;
-    left: -36px;
-    top: 57px;
+  .container .main-common {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .container .main-right h1 {
-    font-size: 35px;
-    width: 400px;
-    margin-left: 10px;
+  .container .box {
+    display: none;
   }
-  .container .main-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .container .main-right {
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 275px;
-  }
-  .container .main-form:before {
-    width: 86%;
-    top: 5px;
-  }
-  .container .main-form__text {
-    margin: 10px;
-    line-height: 25px;
-  }
-  .container .main-form p {
-    margin: 0px 0 20px 63px;
-  }
-  .container .input {
-    margin: -10px 10px 0px 70px;
-    text-align: center;
-  }
-  .container .main-button {
-    margin: 15px 0px 10px 70px;
-    width: 311px;
-  }
-  .container .small-text {
-    margin-left: 130px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -879,14 +869,14 @@ button:focus {
     margin: 0 auto;
   }
   .container .main-form {
-    width: 500px;
+    max-width: 524px;
     height: auto;
   }
-  .container .main-form:before {
-    left: 35px;
-  }
   .container .main-form__text {
-    width: 300px;
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 424px;
+    width: 100%;
     margin: 20px auto;
   }
   .container .main-form p {
@@ -910,6 +900,7 @@ button:focus {
     width: 576px;
   }
   .container .main-form {
+    margin: auto;
     max-width: 425px;
   }
   .container .main-form:before {
@@ -929,20 +920,29 @@ button:focus {
     margin: auto;
   }
   .container .main-form {
-    max-width: 300px;
+    max-width: 220px;
+    margin: auto;
   }
-  .container .main__text {
-    max-width: 300px;
+  .container .main-form p {
+    font-size: 16px;
+    max-width: 230px;
+    margin: auto;
+  }
+  .container .main-form__text {
+    max-width: 230px;
   }
   .container h1.title {
-    font-size: 25px;
-    max-width: 280px;
+    font-size: 20px;
+    max-width: 230px;
+  }
+  .container .main-right span {
+    font-size: 20px;
   }
   .container .input {
-    max-width: 280px;
+    max-width: 200px;
   }
   .container .main-button {
-    max-width: 280px;
+    max-width: 200px;
   }
 }
 
@@ -1019,6 +1019,14 @@ button:focus {
   .container {
     width: 767px;
   }
+  .container .advantages-title {
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+  .container .advantages-lower {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1036,7 +1044,11 @@ button:focus {
   .container {
     width: 95%;
   }
+  .container .advantages-common {
+    padding: 20px 0 20px;
+  }
   .container .advantages-upper {
+    margin: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1044,7 +1056,41 @@ button:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 265px;
+    margin-bottom: 15px;
   }
+  .container .advantages-title {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .container .advantages-title__text {
+    width: 230px;
+    margin-bottom: 10px;
+  }
+  .container .advantages-icons_text {
+    max-width: 300px;
+  }
+}
+
+.products {
+  padding: 57px 0 73px;
+}
+
+.products-subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.products-subtitle:before {
+  content: '';
+  background: url("../img/products/wavy-line.png") no-repeat center;
+  width: 46px;
+  height: 6px;
+  position: absolute;
+  top: 42px;
+  left: 48%;
 }
 
 *, *:after, *:before {
@@ -1066,7 +1112,7 @@ body {
   text-align: center;
 }
 
-.container .sudtitle-h3 {
+.container .subtitle-h3 {
   font-size: 27px;
   text-align: center;
 }
