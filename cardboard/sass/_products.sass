@@ -1,15 +1,85 @@
 .products 
- padding: 57px 0 73px  
- &-subtitle 
-  text-transform: uppercase 
-  font-weight: bold
-  position: relative
-  margin-bottom: 39px 
-  &:before 
-   content: ''
-   background: url('../img/products/wavy-line.png') no-repeat center 
-   width: 46px 
-   height: 6px
-   position: absolute 
-   top: 42px 
-   left: 48% 
+  padding: 57px 0 73px  
+  &-subtitle 
+    text-transform: uppercase 
+    font-weight: bold
+    position: relative
+    margin-bottom: 39px 
+    &:before 
+      content: ''
+      background: url('../img/products/wavy-line.png') no-repeat center 
+      width: 46px 
+      height: 6px
+      position: absolute 
+      top: 42px 
+      left: 48% 
+  &-price 
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  .price
+    &-img__block
+      margin-bottom: 35px 
+    &-img 
+      height: 280px
+      max-width: 421px 
+      width: 100%  
+      margin-bottom: 20px
+    &__block 
+      align-items: center
+      display: flex
+      flex-direction: column 
+  .block-text 
+    text-align: center
+    font-size: 20px
+    font-weight: 700  
+    margin-bottom: 28px
+  .block-button_input 
+    display: flex 
+    justify-content: center 
+    align-items: center  
+  .price-input 
+    margin-right: 6px
+    font-size: 14px
+    width: 128px 
+    height: 48px 
+    border: 1px solid #a4a4a4 
+  .products-button
+    margin-left: 6px 
+    width: 173px 
+    height: 48px 
+    font-size: 14px 
+
+@media (max-width: 1199px)
+  .container
+    width: 941px
+@media (max-width: 992px) 
+  .container
+    width: 767px
+@media (max-width: 768px)
+  .container
+    width: 576px
+@media(max-width: 577px)
+  .container
+    width: 95%
+  .products
+    padding: 20px 0 10px   
+    &-subtitle 
+      font-size: 20px !important        
+      &:before 
+        left: 45%
+    .price-img
+      max-width: 300px 
+      height: 205px 
+      margin-bottom: 20px
+    .block-button_input 
+      flex-direction: column 
+    .block-text 
+      font-size: 17px   
+    .price-input 
+      text-align: center
+      width: 173px 
+      margin-right: 0
+      margin-bottom: 15px 
+    .products-button 
+      margin-left: 0   
