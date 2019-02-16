@@ -838,10 +838,21 @@ button:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container .main-form:before {
+    top: -6px;
+    left: 7px;
+  }
+  .container .main-form__text {
+    margin: 30px auto;
+  }
+  .container p {
+    margin: 10px auto;
+  }
   .container .box {
     display: none;
   }
   .container .main-right {
+    margin: auto;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -850,6 +861,16 @@ button:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .container .main-right h1 {
+    margin: auto;
+  }
+  .container .input {
+    margin: 10px;
+    text-align: center;
+  }
+  .container .small-text {
+    margin-left: 0;
   }
 }
 
@@ -870,7 +891,7 @@ button:focus {
   }
   .container .main-form {
     max-width: 524px;
-    height: auto;
+    height: 300px;
   }
   .container .main-form__text {
     font-size: 16px;
@@ -919,21 +940,28 @@ button:focus {
   .container .main {
     margin: auto;
   }
+  .container .main-right {
+    max-width: 320px;
+    width: 100%;
+  }
   .container .main-form {
-    max-width: 220px;
+    max-width: 305px;
     margin: auto;
+  }
+  .container .main-form:before {
+    height: 320px;
   }
   .container .main-form p {
     font-size: 16px;
-    max-width: 230px;
-    margin: auto;
+    max-width: 300px;
+    margin: 0 auto 10px;
   }
   .container .main-form__text {
-    max-width: 230px;
+    max-width: 300px;
   }
   .container h1.title {
-    font-size: 20px;
-    max-width: 230px;
+    font-size: 25px;
+    max-width: 300px;
   }
   .container .main-right span {
     font-size: 20px;
@@ -1150,12 +1178,18 @@ button:focus {
           align-items: center;
 }
 
-.products .price-input {
+.products .button-white {
+  color: #a4a4a4;
+  background: #ffffff;
   margin-right: 6px;
   font-size: 14px;
   width: 128px;
   height: 48px;
   border: 1px solid #a4a4a4;
+}
+
+.products .button-white:hover {
+  background: #F0F0F0;
 }
 
 .products .products-button {
@@ -1210,7 +1244,7 @@ button:focus {
   .products .block-text {
     font-size: 17px;
   }
-  .products .price-input {
+  .products .button-white {
     text-align: center;
     width: 173px;
     margin-right: 0;
@@ -1315,10 +1349,114 @@ button:focus {
   }
   .input.form-input {
     margin-bottom: 15px;
+    max-width: 300px;
   }
   .button.form-button {
     max-width: 200px;
   }
+}
+
+.production {
+  padding: 100px 0 100px;
+}
+
+.production-common {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justifu-content: center;
+}
+
+.production-big__img img {
+  max-width: 535px;
+}
+
+.production .arrow {
+  width: 22px;
+  height: 78px;
+  position: absolute;
+  border: 1px solid #ff9d00;
+}
+
+.production .arrow:hover {
+  cursor: pointer;
+}
+
+.production .arrow_right {
+  right: 0;
+  background: url("../img/slider/arrow-right.png") no-repeat center;
+}
+
+.production .arrow_right:hover {
+  background: url("../img/slider/yellow-right.png") no-repeat center;
+}
+
+.production .arrow_left {
+  left: 0;
+  background: url("../img/slider/arrow-left.png") no-repeat center;
+}
+
+.production .arrow_left:hover {
+  background: url("../img/slider/arrow-right.png") no-repet center;
+}
+
+.production .arrow .slider {
+  position: relative;
+  outline: none;
+}
+
+.production .arrow .slider__item img {
+  width: 100%;
+}
+
+.production .arrow .slider__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.production-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.production-subtitle {
+  max-width: 400px;
+  height: 62px;
+  background: #ff9d00;
+  color: white;
+  font-size: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 24px;
+  margin-bottom: 26px;
+}
+
+.production-text {
+  font-size: 16px;
+  padding-left: 23px;
+  text-align: justify;
+  line-height: 20px;
 }
 
 *, *:after, *:before {
