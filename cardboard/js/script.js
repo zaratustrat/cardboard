@@ -19,10 +19,10 @@ $('.slider').slick({
  fade: true,
  asNavFor: '.slider__item'
 });
-$('.slider__item').slick({
+$('.slider-two').slick({
  slidesToShow: 3,
  slidesToScroll: 1,
- asNavFor: '.slider',
+ asNavFor: '.slider__item',
  dots: true,
  centerMode: true,
  focusOnSelect: true,
