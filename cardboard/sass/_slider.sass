@@ -3,43 +3,42 @@
   &-common 
     display: flex 
     justifu-content: center 
-  &-big__img 
-    img 
-      max-width: 535px
-     
+
+  .slider-for 
+    width: 535px  
+    height: 377px 
+    margin-bottom: 13px
+  .slider-nav
+    width: 475px
+    height: 78px
+    margin: auto 
+    
+  //   overlow: hidden
+  //   cursor: pointer
+  // .slider-nav .slick-track
+  //   height: 85px
+   
   .arrow 
     width: 22px
     height: 78px
     position: absolute 
     border: 1px solid $primary-bg-color
     &:hover
-      cursor: pointer
+        background: $primary-bg-color
+        cursor: pointer
     &_right  
-      right: 0
-      background: url('../img/slider/arrow-right.png')no-repeat center
+      right: -30px
+      top: 0
+      background: url('../img/slider/yellow-right.png')no-repeat center
       &:hover
-        background: url('../img/slider/yellow-right.png')no-repeat center 
+        background: #ff9d00 url('../img/slider/arrow-right.png')no-repeat center   
     &_left
-      left: 0
-      background: url('../img/slider/arrow-left.png')no-repeat center
+      top: 0
+      left: -30px
+      background: url('../img/slider/yellow-left.png')no-repeat center
       &:hover 
-        background: url('../img/slider/arrow-right.png')no-repet center 
-    .slider
-      position: relative 
-      outline: none 
-      &__item img 
-        width: 100% 
-      &__item 
-        &:before  
-          content: ''
-          position: absolute 
-          top: 0 
-          left: 0 
-          width: 100%
-          height: 100% 
-          background: rgba(0,0,0,0.5)
-          z-index: 4 
-
+        background: #ff9d00 url('../img/slider/arrow-left.png')no-repet center 
+ 
   &-content
     display: flex
     flex-direction: column

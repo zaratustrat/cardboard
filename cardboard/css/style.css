@@ -1367,8 +1367,16 @@ button:focus {
   justifu-content: center;
 }
 
-.production-big__img img {
-  max-width: 535px;
+.production .slider-for {
+  width: 535px;
+  height: 377px;
+  margin-bottom: 13px;
+}
+
+.production .slider-nav {
+  width: 475px;
+  height: 78px;
+  margin: auto;
 }
 
 .production .arrow {
@@ -1379,45 +1387,28 @@ button:focus {
 }
 
 .production .arrow:hover {
+  background: #ff9d00;
   cursor: pointer;
 }
 
 .production .arrow_right {
-  right: 0;
-  background: url("../img/slider/arrow-right.png") no-repeat center;
-}
-
-.production .arrow_right:hover {
+  right: -30px;
+  top: 0;
   background: url("../img/slider/yellow-right.png") no-repeat center;
 }
 
+.production .arrow_right:hover {
+  background: #ff9d00 url("../img/slider/arrow-right.png") no-repeat center;
+}
+
 .production .arrow_left {
-  left: 0;
-  background: url("../img/slider/arrow-left.png") no-repeat center;
+  top: 0;
+  left: -30px;
+  background: url("../img/slider/yellow-left.png") no-repeat center;
 }
 
 .production .arrow_left:hover {
-  background: url("../img/slider/arrow-right.png") no-repet center;
-}
-
-.production .arrow .slider {
-  position: relative;
-  outline: none;
-}
-
-.production .arrow .slider__item img {
-  width: 100%;
-}
-
-.production .arrow .slider__item:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 4;
+  background: #ff9d00 url("../img/slider/arrow-right.png") no-repet center;
 }
 
 .production-content {

@@ -12,18 +12,19 @@ $(document).ready(function () {
  });
 }); 
 
-$('.slider').slick({
+$('.slider-for').slick({
  slidesToShow: 1,
  slidesToScroll: 1,
  arrows: false,
  fade: true,
- asNavFor: '.slider__item'
+ asNavFor: '.slider-nav',
+ autoplay: true
 });
-$('.slider-two').slick({
+$('.slider-nav').slick({
  slidesToShow: 3,
  slidesToScroll: 1,
- asNavFor: '.slider__item',
- dots: true,
+ asNavFor: '.slider-for',
+ dots: false,
  centerMode: true,
  focusOnSelect: true,
  nextArrow: '<div class="arrow arrow_right"></div>',
