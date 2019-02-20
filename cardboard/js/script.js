@@ -18,17 +18,52 @@ $('.slider-for').slick({
  arrows: false,
  fade: true,
  asNavFor: '.slider-nav',
- autoplay: true
+ autoplay: true,
+ nextArrow: '<div class="arrow arrow_right"></div>',
+ prevArrow: '<div class="arrow arrow_left"></div>',
+ responsive: [
+  {
+   breakpoint: 992,
+   settings: {
+    arrows: true,
+   }
+  },
+ ]
 });
+
 $('.slider-nav').slick({
- slidesToShow: 3,
+ slidesToShow: 4,
  slidesToScroll: 1,
  asNavFor: '.slider-for',
  dots: false,
- centerMode: true,
  focusOnSelect: true,
  nextArrow: '<div class="arrow arrow_right"></div>',
  prevArrow: '<div class="arrow arrow_left"></div>',
+ responsive: [
+  {
+   breakpoint: 1200,
+   settings: {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+   }
+  },
+  {
+   breakpoint: 1024,
+   settings: {
+    slidesToShow: 4,
+    slidesToScroll: 1
+   }
+  },
+ ]
+});
+
+$('.reviews-slider').slick({
+ infinite: true,
+ // centerMode: true,
+ slidesToShow: 3,
+ slidesToScroll: 3, 
+ nextArrow: '<div class="slick-arrow slick-next"></div>',
+ prevArrow: '<div class="slick-arrow slick-prev"></div>',
  responsive: [
   {
    breakpoint: 1200,
@@ -38,10 +73,10 @@ $('.slider-nav').slick({
    }
   },
   {
-   breakpoint: 1024,
+   breakpoint: 992,
    settings: {
     slidesToShow: 2,
-    slidesToScroll: 1
+    slidesToScroll: 1,
    }
   },
   {
@@ -50,12 +85,13 @@ $('.slider-nav').slick({
     slidesToShow: 1,
     slidesToScroll: 1
    }
+  },
+  {
+   breakpoint: 576,
+   settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1
+   }
   }
  ]
-});
-
-$('.reviews-slider').slick({
- infinite: true,
- slidesToShow: 3,
- slidesToScroll: 3
 });

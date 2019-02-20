@@ -15,6 +15,33 @@
     justify-content: center
     align-items: center 
     margin-bottom: 33px 
-    cursor: pointer 
+    cursor: pointer
+    filter: grayscale(100%)
+    transition: 1s 
     &:hover 
-      border: 2px solid $primary-bg-color 
+      border: 2px solid $primary-bg-color
+      filter: grayscale(0) 
+
+@media (max-width: 1199px)
+  .container
+    width: 941px
+@media (max-width: 992px) 
+  .container
+    width: 767px
+    .klients
+      &-common
+        justify-content: space-evenly 
+      &-logo 
+        filter: grayscale(0) 
+
+@media (max-width: 768px)
+  .container
+    width: 576px
+    .klients
+      &-subtitle 
+        &:before
+            content: '' 
+            left: 46% 
+@media(max-width: 577px)
+  .container
+    width: 95%

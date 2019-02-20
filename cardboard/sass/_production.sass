@@ -11,10 +11,11 @@
   .slider-for 
     width: 535px  
     height: 377px 
-    margin-bottom: 13px
+    margin-bottom: 13px 
+    outline: none
   .slider-nav
     width: 475px
-    height: 78px
+    // height: 78px
     margin: auto
   .slick-slide   
     filter: brightness(0.5)
@@ -26,16 +27,17 @@
     height: 78px
     position: absolute 
     border: 1px solid $primary-bg-color
+    top: 0
     &:hover
         cursor: pointer
     &_right  
       right: -30px
-      top: 0
+     
       background: url('../img/slider/yellow-right.png')no-repeat center
       &:hover
         background: #ff9d00 url('../img/slider/arrow-right.png')no-repeat center   
     &_left
-      top: 0
+     
       left: -30px
       background: url('../img/slider/yellow-left.png')no-repeat center
       &:hover 
@@ -74,12 +76,38 @@
         max-width: 100% 
         margin-bottom: 5px
       &-text 
-        margin-bottom: 10px          
-     
-
+        margin-bottom: 10px  
+    .slider-nav 
+        display: none 
+    .arrow 
+      top: 40% 
 @media (max-width: 768px)
+  .production
+    padding: 50px 0 0px
   .container
     width: 576px
+    .production 
+      &-subtitle 
+        justify-content: center 
+        padding: 0 
+      &-text 
+        padding: 0 
+        text-align: center
+    .slider-for
+      max-width: 80%
+      margin: auto 
+    .arrow 
+      top: 30%
 @media(max-width: 577px)
+  .production 
+      padding: 30px 0 30px
   .container
-    width: 95%      
+    width: 95%
+    .slider-common 
+      max-width: 100%
+    .slider-for 
+      max-width: 60%
+      height: 0% 
+    .arrow 
+      top: 17%  
+             
