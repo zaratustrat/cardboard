@@ -1424,12 +1424,10 @@ button:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .production-subtitle {
+  margin-top: 20px;
   max-width: 400px;
   height: 62px;
   background: #ff9d00;
@@ -1521,7 +1519,7 @@ button:focus {
     height: 0%;
   }
   .container .arrow {
-    top: 17%;
+    top: 20% !important;
   }
 }
 
@@ -1674,7 +1672,7 @@ button:focus {
     width: 576px;
   }
   .container .reviews-slider {
-    width: 70%;
+    width: 50%;
   }
 }
 
