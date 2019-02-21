@@ -1680,15 +1680,104 @@ button:focus {
   .container {
     width: 95%;
   }
-  .container .reviews-swbtitle {
-    font-size: 20px;
+  .container .reviews-subtitle {
+    font-size: 20px !important;
+  }
+  .container .reviews-subtitle:before {
+    left: 42%;
   }
   .container .reviews-list {
-    height: 250px;
+    height: 200px;
   }
   .container .slick-arrow {
-    top: 95px;
+    top: 67px;
   }
+}
+
+.footer {
+  position: relative;
+}
+
+.footer .window-contacts {
+  font-size: 18px;
+  line-height: 23px;
+  padding: 30px 0 36px 62px;
+  background: white;
+  border-radius: 5px;
+  max-width: 313px;
+  width: 100%;
+  height: 390px;
+  position: absolute;
+  top: 80px;
+  left: 440px;
+  z-index: 9;
+}
+
+.footer h5 {
+  font-weight: 100;
+  margin: 0 auto 10px;
+}
+
+.footer strong {
+  display: block;
+  font-weight: bold;
+}
+
+.footer .office-adress:before {
+  content: '';
+  background: url("../img/map/Map-Marker.png") no-repeat center;
+  width: 17px;
+  height: 25px;
+  position: absolute;
+  left: 10%;
+  top: 9%;
+}
+
+.footer .tel {
+  margin: 29px auto 12px;
+}
+
+.footer .tel:before {
+  content: '';
+  background: url("../img/map/map-phone.png") no-repeat center;
+  width: 17px;
+  height: 25px;
+  position: absolute;
+  left: 10%;
+  top: 42%;
+}
+
+.footer-button {
+  width: 160px;
+  height: 45px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer .email:before {
+  content: '';
+  background: url("../img/map/map-list.png") no-repeat center;
+  width: 17px;
+  height: 25px;
+  position: absolute;
+  left: 10%;
+  top: 79%;
+}
+
+.footer-block {
+  height: 88px;
+  background: #1b1b1b;
+  color: white;
+}
+
+.footer-block {
+  padding: 36px 0;
+}
+
+.footer-block .footer-text {
+  color: #8d8d8d;
+  text-align: center;
+  font-size: 13px;
 }
 
 *, *:after, *:before {
