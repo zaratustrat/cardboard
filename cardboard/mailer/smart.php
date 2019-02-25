@@ -1,5 +1,5 @@
 <?php 
-$mail =$_POST['user_name']
+// $mail =$_POST['user_name']
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 

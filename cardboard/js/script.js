@@ -96,13 +96,20 @@ $('.reviews-slider').slick({
  ]
 }); 
 
+// $(document).ready(function () {
+//  $('#button-callback').on('click', function () {
+//   $('#modal-callback').toggleClass('modal_visible');
+//  });
+//  $('.modal-close').on('click', function () {
+//   $('#modal-callback').toggleClass('modal_visible');
+//  });
+// }); 
+
 $(document).ready(function () {
- $('#button-callback').on('click', function () {
+ $('.callback-text').on('click', function () {
   $('#modal-callback').toggleClass('modal_visible');
  });
  $('.modal-close').on('click', function () {
   $('#modal-callback').toggleClass('modal_visible');
  });
-}); 
-
-
+});
