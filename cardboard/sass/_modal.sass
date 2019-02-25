@@ -1,0 +1,83 @@
+.modal 
+ text-align: center
+ color: white
+ position: fixed
+ width: 100%
+ height: 100%
+ background-color:  rgba(#000, 0.52)
+ left: 0
+ top: 0
+ z-index: 99
+ display: none
+ &_visible
+   display: flex 
+ &-common 
+   max-width: 750px
+   width: 100%
+   height: 352px
+   background-color: #fff
+   margin: 200px auto
+   position: relative
+ &-title
+  background: $primary-bg-color 
+  height: 68px 
+  font-size: 21px  
+  padding: 22px 0 
+ &-dialog
+  padding: 37px 0 51px
+  background: url('../img/modal/backg.png')no-repeat center
+  background-size: cover 
+ &-span 
+  display: block 
+  font-size: 30px
+ &-subtitle 
+  font-size: 25px
+  margin-bottom: 23px 
+ &-text  
+  font-size: 20px 
+  margin-bottom: 17px 
+ &-input__button 
+  margin: 0 
+ &-input 
+  max-width: 365px 
+  width: 100% 
+  height: 56px 
+  margin: 0 16px 10px 0   
+ &-button 
+  max-width: 180px 
+  width: 100% 
+  height: 56px 
+ &-close
+  position: absolute  
+  left: 100% 
+  top: -5% 
+  &:hover 
+   cursor: pointer
+
+@media (max-width: 992px) 
+  .container
+    width: 767px 
+  .modal 
+     &-common 
+      max-width: 700px
+@media (max-width: 768px)
+  .container
+    width: 576px
+  .modal 
+     &-common 
+      max-width: 520px 
+     &-input 
+      text-align: center   
+@media(max-width: 577px)
+  .container
+    width: 95%
+  .modal 
+     &-common 
+      max-width: 320px 
+     &-input 
+      margin: 10px auto 
+      width: 90% 
+     &-button 
+      margin-bottom: 15px 
+     &-span 
+      font-size: 25px     
