@@ -61,7 +61,7 @@ $('.reviews-slider').slick({
  infinite: true,
  // centerMode: true,
  slidesToShow: 3,
- slidesToScroll: 3, 
+ slidesToScroll: 1, 
  nextArrow: '<div class="slick-arrow slick-next"></div>',
  prevArrow: '<div class="slick-arrow slick-prev"></div>',
  responsive: [
@@ -112,4 +112,8 @@ $(document).ready(function () {
  $('.modal-close').on('click', function () {
   $('#modal-callback').toggleClass('modal_visible');
  });
-});
+}); 
+
+$(document).ready(function(){
+ $(".phone").mask("+7 (999) 99-99-999");
+})

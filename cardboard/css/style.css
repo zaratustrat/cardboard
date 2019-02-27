@@ -894,7 +894,7 @@ button:focus {
     height: 300px;
   }
   .container .main-form__text {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
     max-width: 424px;
     width: 100%;
@@ -967,10 +967,10 @@ button:focus {
     font-size: 20px;
   }
   .container .input {
-    max-width: 200px;
+    max-width: 210px;
   }
   .container .main-button {
-    max-width: 200px;
+    max-width: 210px;
   }
 }
 
@@ -1609,6 +1609,7 @@ button:focus {
 }
 
 .reviews-list {
+  outline: none;
   max-width: 33%;
   height: 377px;
   border: 1px solid #dbdbdb;
@@ -1761,6 +1762,10 @@ button:focus {
   color: white;
 }
 
+.footer .maps iframe {
+  vertical-align: bottom;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 941px;
@@ -1781,8 +1786,6 @@ button:focus {
     margin: auto;
     padding: 35px 0;
     text-align: center;
-    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
     left: 0;
   }
 }
